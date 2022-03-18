@@ -1,0 +1,21 @@
+
+    @keyframes x-transition {
+     
+        0%{
+        transform: translateX(0%);
+        }
+        66%{
+        transform: translateX(20%);
+
+        }
+        100%{
+        transform: translateX(0%);
+            
+        }
+    }
+
+#messages{
+    animation: x-transition 2s infinite ease-in-out;
+
+
+}

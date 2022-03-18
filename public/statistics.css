@@ -1,0 +1,258 @@
+/*@import url('../node_modules/font-awesome/css/font-awesome.min.css');*/
+header{
+  max-height: 75vh;
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: #11998e;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #38ef7d, #11998e);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #38ef7d, #11998e);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* Add the blur effect
+  filter: blur(0.5px);
+  -webkit-filter: blur(0.5px); */
+}
+
+body {
+  min-height: 100vh;
+}
+
+
+.form {
+  margin-top: 2rem;
+  max-width: auto;
+  max-height: auto;
+  border-radius: 0.25rem;
+  background: rgb(231, 233, 235);
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.26);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.26);
+
+}
+
+.margin-top {
+  margin-top: 10px;
+}
+
+.column-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+}
+
+.row-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: rgb(82, 86, 90);
+  font-family: "Roboto";
+  text-align: start;
+  padding: 0.35rem 1rem 0.35rem 1rem;
+}
+
+.seperator {
+  font-size: 2rem;
+  color: rgb(82, 86, 90);
+  padding: 0;
+}
+
+.input-field {
+  margin: 0 0.5rem 0.25rem 0.5rem;
+  height: 2rem;
+  padding: 0.15rem;
+  border-color: rgb(85, 85, 85);
+  text-align: center;
+  width: 85%;
+  background: white;
+  border-width: 0.12rem;
+  border-radius: 0.25rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: auto;
+  color: rgb(20, 20, 20);
+  -webkit-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.26);
+  -moz-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.26);
+  box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.26);
+
+}
+
+.margin-bottom {
+  margin-bottom: 10px;
+}
+
+.form-button {
+  color: #FFFFFF;
+  font-size: 1rem;
+  text-align: center;
+  min-width: 6rem;
+  min-height: 2.25rem;
+  border-radius: 0.25rem;
+  font-family: "Roboto";
+}
+
+.green-button {
+  background: rgb(23, 168, 40, 00.65);
+}
+
+.red-button {
+  background: rgb(239, 119, 16, 0.65);
+}
+
+.form-button:hover {
+  filter: saturate(1.5);
+}
+
+.radio-button {
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+label .fas:hover {
+  transform: scale(1.2);
+
+
+}
+
+.radio-button:checked+label {
+  color: #08b340;
+}
+
+.disable-select {
+  user-select: none;
+  /* supported by Chrome and Opera */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+}
+
+
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  width: 100%;
+
+
+}
+
+.limit-button {
+  background: transparent;
+  border: none !important;
+  font-size: 22px;
+  padding: 8px;
+  font-weight: bolder;
+  outline: none;
+}
+
+.limit-button:hover {
+  transform: scale(1.2);
+
+}
+
+.svg-container {
+  min-width: 80vw;
+  min-height: auto;
+  overflow: auto;
+}
+
+.svg {
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.26);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.26);
+  margin: 20px;
+  background: white;
+
+}
+
+.tooltip {
+  opacity: 0;
+  padding: 5px;
+  border-radius: 5px;
+  background: #0A93CC;
+  position: absolute;
+  border: solid;
+  color: white;
+  z-index: 10;
+  -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+  font-size: 18px;
+}
+
+.fade-in {
+  animation: fadeIn ease 0.5s;
+  -webkit-animation: fadeIn ease 0.5s;
+  -moz-animation: fadeIn ease 20s;
+  -o-animation: fadeIn ease 20s;
+  -ms-animation: fadeOut ease 20s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  animation: fadeOut ease 0.5s;
+  -webkit-animation: fadeOut ease 0.5s;
+  -moz-animation: fadeOut ease 0.5s;
+  -o-animation: fadeOut ease 0.5s;
+  -ms-animation: fadeOut ease 0.5s;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .svg-container {
+    min-width: 96vw;
+  }
+
+  .form-button {
+    height: 1.5rem;
+  }
+
+  .input-field {
+    height: auto;
+  }
+
+  .form {
+    max-width: 66%;
+  }
+}

@@ -1,0 +1,21 @@
+
+    @keyframes y-transition {
+     
+        0%{
+        transform: translateY(0%);
+        }
+        66%{
+        transform: translateY(-80%);
+
+        }
+        100%{
+        transform: translateY(0%);
+            
+        }
+    }
+
+#cloud-man{
+    animation: y-transition 5s infinite ease-in-out;
+
+
+}

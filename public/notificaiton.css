@@ -1,0 +1,86 @@
+
+#main-content{
+  min-height: 80vh;
+  background: #FEFEFE;
+}
+.header-message{
+  padding-top: 2rem;
+  margin-top: 0px;
+  margin-left: 17%;
+  color: rgb(53, 33, 33);
+  text-decoration: underline;
+  font-family: "Lobster", cursive;
+  font-size: 1.25rem;
+}
+.notificaiton-container {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  height: auto;
+  width: 80%;
+  margin-left: 10%;
+
+  
+}
+.column{
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+.id{
+  display: none;
+}
+  .notification {
+  width: 80%;
+  border: solid;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  min-height: 2.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.26);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.26);
+}
+.notification:hover{
+  filter: saturate(200%);
+}
+.notification strong {
+  font-size: 1.15rem;
+}
+.dismiss-button{
+  background: transparent;
+  border: none !important;
+  margin: none;
+  padding: none;
+  outline :none;
+  justify-self: end;
+  align-self: start;
+  cursor: pointer;
+  font-size: 1.15rem;
+}
+.dismiss-button:hover{
+  color: #8d1010;
+}
+.alert{
+  background: rgba(152, 100, 22, 0.8);
+  color: #ffbd43;
+}
+.read{
+  background: rgba(6, 72, 26, 0.8 );
+  border: solid;
+  border-color: green;
+  border-radius: 0.5rem;
+  color: #57f185;
+
+
+}
+  @media only screen and (max-width: 800px) {
+
+    header{
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+}

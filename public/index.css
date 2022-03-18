@@ -1,0 +1,169 @@
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: #11998e;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #38ef7d, #11998e);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #38ef7d, #11998e);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+    min-height: 100vh;
+    min-width: 100%;
+    /* Add the blur effect
+    filter: blur(0.5px);
+    -webkit-filter: blur(0.5px); */
+}
+  @keyframes opacity-fade {
+    from {
+      opacity: 0%;
+  
+    }
+  
+    to {
+      opacity: 100%;
+    }
+  }
+  
+  @keyframes text-shadow {
+    0% {
+      text-shadow: 0 0 0px #49FF18, 0 0 0px #49FF18, 0 0 0px #49FF18, 0 0 0px #49ff18, 2px 3px 0px rgba(206, 89, 55, 0);
+  
+    }
+  
+    66% {
+      text-shadow: 0 0 15px #49FF18, 0 0 20px #49FF18, 0 0 22.5px #49FF18, 0 0 37.5px #49ff18, 2px 3px 0px rgba(206, 89, 55, 0);
+    }
+  
+    100% {
+      text-shadow: 0 0 0px #49FF18, 0 0 0px #49FF18, 0 0 0px #49FF18, 0 0 0px #49ff18, 2px 3px 0px rgba(206, 89, 55, 0);
+    }
+  }
+  
+  .woman-plant-img {
+    animation: opacity-fade 2.5s ease-out;
+    min-width: 600px;
+    min-height: auto;
+    z-index: 1;
+  }
+  
+  .banner-title {
+    color: white;
+    font-size: 8rem;
+    margin-left: 1rem;
+    font-family: 'Lobster', cursive;
+    animation: opacity-fade 5s, text-shadow 3s infinite;
+  
+  }
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#status-header {
+    font-size: 4rem;
+    font-family: 'Lobster', cursive;
+  }
+ 
+  .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    min-height: 15rem;
+    width: 95%;
+    margin: 2rem;
+    background: rgb(231,233,235);
+    border-radius: 0.5rem;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(107, 107, 107, 0.26);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(107, 107, 107, 0.26);
+  box-shadow: 0px 0px 10px 2px rgba(107, 107, 107, 0.26);
+  }
+  
+  .status-box {
+    border: solid;
+    border-radius: 0.5rem;
+    font-size: 1.75rem;
+    max-height: 10rem;
+    min-width: 20rem;
+    padding: 0.25rem;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.26);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.26);
+  
+  }
+  
+  .status-box ul {
+    list-style: none;
+    padding-left: 0.5rem;
+  }
+  
+  .status-box:hover {
+    filter: saturate(200%);
+  }
+  
+  .alert {
+    background: rgba(152, 100, 22, 0.8);
+    color: #ffbd43;
+  }
+  
+  .clear {
+    background: rgba(6, 72, 26, 0.8);
+    border-color: green;
+    color: #57f185;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .woman-plant-img{
+      min-width: 450px;
+
+    }
+    .banner-title{
+      font-size: 6rem;
+    }
+    .status-box{
+      min-width: 15rem;
+    }
+
+  }
+  @media only screen and (max-width: 800px) {
+
+    header{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .woman-plant-img{
+      min-width: 65%;
+    }
+    .banner-title{
+      top: 70%;
+      left: 20%;
+      font-size: 6rem;
+    }
+    
+   
+    
+
+    #status-header {
+        text-align: center;
+        font-size: 3rem;
+      }
+      .flex-container {
+        margin: 1rem auto 1rem auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        flex-direction: column;
+        min-height: 40rem;
+        width: 75vw;
+        justify-content: space-around;
+        border-radius: 0.5rem;
+      }
+    
+      .status-box {
+        min-height: auto;
+      }
+
+  }
